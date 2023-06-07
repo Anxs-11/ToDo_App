@@ -41,7 +41,7 @@ export const TickTask = async (req, res, next) => {
         await Task.save();
         res.status(200).json({
             success: true,
-            message: "Task Ticked Succesfully"
+            message: "Task Updated"
         })
     } catch (error) {
         next(error)
@@ -56,7 +56,7 @@ export const deleteTask = async (req, res, next) => {
 
         res.status(200).json({
             success: true,
-            message: "Task Deleted Succesfully"
+            message: "Task Deleted "
         })
     } catch (error) {
         next(error)
